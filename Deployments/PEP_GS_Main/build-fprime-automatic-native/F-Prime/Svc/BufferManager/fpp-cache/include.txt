@@ -1,0 +1,2 @@
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/BufferManager/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/BufferManager/Telemetry.fppi

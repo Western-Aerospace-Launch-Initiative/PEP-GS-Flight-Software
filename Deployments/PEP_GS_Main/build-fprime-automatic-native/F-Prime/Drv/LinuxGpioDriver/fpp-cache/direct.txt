@@ -1,0 +1,4 @@
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/LinuxGpioDriver/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Log/Log.fpp
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Cycle/Cycle.fpp

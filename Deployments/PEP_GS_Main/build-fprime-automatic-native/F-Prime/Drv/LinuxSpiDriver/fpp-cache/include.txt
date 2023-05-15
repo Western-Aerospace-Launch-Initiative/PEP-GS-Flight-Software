@@ -1,0 +1,2 @@
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/LinuxSpiDriver/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/LinuxSpiDriver/Telemetry.fppi

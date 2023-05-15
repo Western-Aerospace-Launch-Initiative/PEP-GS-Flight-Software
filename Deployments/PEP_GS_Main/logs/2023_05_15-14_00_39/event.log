@@ -1,0 +1,3 @@
+2023-05-15 14:00:55,(2(0)-1684173655:709017),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x500 dispatched to port 0
+2023-05-15 14:00:55,(2(0)-1684173655:709172),cmdDisp.NoOpReceived,1287,EventSeverity.ACTIVITY_HI,Received a NO-OP command
+2023-05-15 14:00:55,(2(0)-1684173655:709180),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x500 completed

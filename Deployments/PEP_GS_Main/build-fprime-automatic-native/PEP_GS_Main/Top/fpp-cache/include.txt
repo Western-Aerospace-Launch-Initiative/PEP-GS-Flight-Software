@@ -1,0 +1,15 @@
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/BlockDriver/Tlm.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/AssertFatalAdapter/AssertFatalEvents.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/BufferManager/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/BufferManager/Telemetry.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/CmdSequencer/Commands.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/CmdSequencer/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/CmdSequencer/Telemetry.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileDownlink/Commands.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileDownlink/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileDownlink/Telemetry.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileManager/Commands.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileManager/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileManager/Telemetry.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileUplink/Events.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileUplink/Telemetry.fppi

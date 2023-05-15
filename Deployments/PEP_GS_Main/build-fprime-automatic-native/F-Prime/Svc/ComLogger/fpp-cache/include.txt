@@ -1,0 +1,2 @@
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/ComLogger/Commands.fppi
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/ComLogger/Events.fppi

@@ -1,0 +1,4 @@
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Cmd/Cmd.fpp
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Log/Log.fpp
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Prm/Prm.fpp
+/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Ping/Ping.fpp
