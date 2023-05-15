@@ -517,4 +517,5 @@ PEP_GS_Main/build-fprime-automatic-native/PEP_GS_Main/Top/Ports_StaticMemoryEnum
 PEP_GS_Main/build-fprime-automatic-native/PEP_GS_Main/Top/PEP_GS_MainTopologyAppDictionary.xml: 0xa452a60c
 PEP_GS_Main/build-fprime-automatic-native/PEP_GS_Main/Top/PEP_GS_MainPacketsAc.cpp: 0xa527b25d
 PEP_GS_Main/build-fprime-automatic-native/PEP_GS_Main/Top/PEP_GS_MainPacketsAc.hpp: 0x55ba754f
+PEP_GS_Main/Drivers/MCP9600.c: 0xeae2ed8f
 PEP_GS_Main/Main.cpp: 0xc52103a2
