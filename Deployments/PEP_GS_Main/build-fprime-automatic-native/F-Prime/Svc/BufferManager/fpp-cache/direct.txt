@@ -1,7 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Buffer/Buffer.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Log/Log.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Time/Time.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Tlm/Tlm.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/BufferManager/Events.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/BufferManager/Telemetry.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Sched/Sched.fpp
