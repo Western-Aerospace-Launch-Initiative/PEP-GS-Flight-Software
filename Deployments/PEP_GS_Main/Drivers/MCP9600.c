@@ -38,7 +38,8 @@ int main(int argc, char** argv) {
 	if ((file = open(bus, O_RDWR)) < 0) { // If cant open bus
         exit(1);
 	}
-    	return getTemp(file, I2C_BUS_ADDRESS);
+    	printf("%f", getTemp(file, I2C_BUS_ADDRESS));
+        return 0;
 }
 
 float getTemp(int file, int address) {
