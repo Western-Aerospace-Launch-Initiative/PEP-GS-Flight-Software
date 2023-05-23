@@ -16,8 +16,8 @@
 //
 //***********************************************
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h> // io interface. Might not need it anymore
+#include <stdlib.h> // Stdlibrary. Probably need it
 #include <linux/i2c-dev.h>
 #include <sys/ioctl.h>
 #include <fcntl.h>
@@ -65,12 +65,13 @@ float getTemp(int file, int address) {
 	if(read(file, data1, 1) != 1) {
     	return 0;
 	} else {
-	/*	char stat = (data1[1]);
-		printf("Stat   ");
+		char stat = (data1[1]);
+	/*	
+        printf("Stat   ");
 		printf("%x",stat);
 		printf("   \n");
 	*/
-	}
+    }
 	char reg[1] = {0x00};
 	write(file, reg, 1);
 	char data[2] = {0};
