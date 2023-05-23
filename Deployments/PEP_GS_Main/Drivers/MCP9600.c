@@ -23,26 +23,23 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+#ifndef I2C_BUS_ADDRESS
+#define I2C_BUS_ADDRESS 0x60
+#endif
+
 float getTemp(int file, int address);
 
 
-void main() {
-	int file;
-	char *bus = "/dev/i2c-2";
-	if ((file = open(bus, O_RDWR)) < 0) {
-    	printf("0 0");
+int main(int argc, char** argv) {
+	
+    int file;
+	char *bus = "/dev/i2c-2"; // Path to bus
+
+	if ((file = open(bus, O_RDWR)) < 0) { // If cant open bus
         exit(1);
 	}
-	while(1) {
-    	float temp1 = getTemp(file, 0x60);
-	//  float temp2 = getTemp(file, 0x60);
-
-        printf("%f", temp1);
-        printf(" \n");
-        sleep(1);
-	}
-        exit(0);
-
+    	printf("%f", getTemp(file, I2C_BUS_ADDRESS));
+        return 0;
 }
 
 float getTemp(int file, int address) {
