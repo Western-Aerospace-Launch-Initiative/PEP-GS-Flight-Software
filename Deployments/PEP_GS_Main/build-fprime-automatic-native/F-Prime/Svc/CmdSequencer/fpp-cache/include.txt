@@ -1,3 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/CmdSequencer/Commands.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/CmdSequencer/Events.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/CmdSequencer/Telemetry.fppi

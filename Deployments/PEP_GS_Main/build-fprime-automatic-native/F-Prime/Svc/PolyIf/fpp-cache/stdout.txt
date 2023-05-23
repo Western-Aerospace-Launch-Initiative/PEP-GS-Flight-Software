@@ -1,2 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Time/Time.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Types/Types.fpp

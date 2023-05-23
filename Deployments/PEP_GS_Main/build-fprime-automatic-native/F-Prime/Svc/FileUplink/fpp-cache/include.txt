@@ -1,2 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileUplink/Events.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileUplink/Telemetry.fppi

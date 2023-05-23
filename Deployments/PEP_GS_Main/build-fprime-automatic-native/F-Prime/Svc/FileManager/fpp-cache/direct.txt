@@ -1,7 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Cmd/Cmd.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Log/Log.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Tlm/Tlm.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileManager/Commands.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileManager/Events.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/FileManager/Telemetry.fppi
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Ping/Ping.fpp

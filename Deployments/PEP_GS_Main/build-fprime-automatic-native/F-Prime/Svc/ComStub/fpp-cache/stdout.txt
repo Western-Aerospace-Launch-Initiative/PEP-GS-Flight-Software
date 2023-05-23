@@ -1,4 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Buffer/Buffer.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Types/Types.fpp

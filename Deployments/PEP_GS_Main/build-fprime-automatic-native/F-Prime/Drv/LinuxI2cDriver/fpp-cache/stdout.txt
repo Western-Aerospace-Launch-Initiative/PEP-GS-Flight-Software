@@ -1,2 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Buffer/Buffer.fpp

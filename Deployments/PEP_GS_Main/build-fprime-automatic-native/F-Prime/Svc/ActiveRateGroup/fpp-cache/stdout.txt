@@ -1,8 +1,0 @@
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Log/Log.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Time/Time.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Fw/Tlm/Tlm.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Cycle/Cycle.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Ping/Ping.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/Svc/Sched/Sched.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/config/AcConstants.fpp
-/home/noahbraasch/WALI/PEP-GS-Flight-Software/fprime/config/FpConfig.fpp
