@@ -1,7 +1,7 @@
 #pragma once
 
 typedef struct {
-    char* i2c_bus;
+    int i2c_bus;
     int i2c_address;
 } i2c_thermocouple;
 
