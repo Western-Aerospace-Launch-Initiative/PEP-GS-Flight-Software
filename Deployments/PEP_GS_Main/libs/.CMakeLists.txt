@@ -1,0 +1,3 @@
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/MCP9600/")
+
+register_fprime_module()

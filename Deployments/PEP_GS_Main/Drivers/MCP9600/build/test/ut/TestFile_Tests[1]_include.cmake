@@ -1,5 +1,0 @@
-if(EXISTS "/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/Drivers/MCP9600/build/test/ut/TestFile_Tests[1]_tests.cmake")
-  include("/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/Drivers/MCP9600/build/test/ut/TestFile_Tests[1]_tests.cmake")
-else()
-  add_test(TestFile_Tests_NOT_BUILT TestFile_Tests_NOT_BUILT)
-endif()
