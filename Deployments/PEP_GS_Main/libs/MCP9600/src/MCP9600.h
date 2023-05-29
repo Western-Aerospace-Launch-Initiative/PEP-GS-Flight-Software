@@ -5,7 +5,7 @@
 
 #define BUFFER_SIZE 12 //Buffer size for accessing /dev/i2c-*
 
-#define THERMOCOUPLE_SENSOR_TYPE 0x05
+#define THERMOCOUPLE_SENSOR_TYPE_REGISTER 0x05
 #define K_TYPE 0x00 // K-Type Thermocouple with no filter
 
 #define DEVICE_CONFIG_REGISTER 0x06
@@ -14,6 +14,8 @@
 #define NORMAL_MODE 0x80
 #define SHUTDOWN_MODE 0x81
 #define BURST_MODE 0x82
+
+#define INIT_FILEDES -1
 
 // Device configuration macro that takes the device handle, access register 
 // and value to write
@@ -29,19 +31,23 @@
 typedef struct {
     int i2c_bus;
     int i2c_address;
+    int filedes;
+    char thermocouple_type;
+    char device_enabled;
+    char device_ID;
 } i2c_thermocouple;
 
-static char* mcp_thermocouple_bus_to_string(i2c_thermocouple device);
+static char* mcp_thermocouple_bus_to_string(int i2c_bus);
 
-static int mcp_access_i2c_bus(i2c_thermocouple device);
+static void mcp_open_i2c_bus(i2c_thermocouple* pdevice);
 
-static void mcp_i2c_device_init(int file);
+static void mcp_i2c_device_init(i2c_thermocouple* pdevice);
 
-int mcp_thermocouple_enable(i2c_thermocouple device);
+int mcp_thermocouple_enable(i2c_thermocouple* pdevice);
 
-int mcp_thermcouple_disable(i2c_thermocouple device);
+int mcp_thermcouple_disable(i2c_thermocouple* pdevice);
 
-float mcp_get_temp(i2c_thermocouple device);
+float mcp_get_temp(i2c_thermocouple* pdevice);
 
 int mcp_no_op();
 

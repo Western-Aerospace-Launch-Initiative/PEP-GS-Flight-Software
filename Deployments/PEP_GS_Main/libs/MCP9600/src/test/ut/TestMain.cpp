@@ -9,9 +9,9 @@ TEST(MCP9600_Tests, BasicAssertions){
 }
 
 
-TEST(MCP9600_Tests, mcp_get_temp_returns_0){
-    i2c_thermocouple device = {2, 0x67}; 
-    ASSERT_EQ(0.0, mcp_get_temp(device));
+TEST(MCP9600_Tests, mcp_device_enable_function){
+    i2c_thermocouple device = {2, 0x67, INIT_FILEDES, K_TYPE, 0, 'A'}; 
+    ASSERT_EQ(0.0, mcp_get_temp(&device));
 }
 
 TEST(MCP9600_Tests, mcp_get_temp_check_valid_i2c_busses){
