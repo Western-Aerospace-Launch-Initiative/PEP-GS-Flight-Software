@@ -9,13 +9,13 @@
 #include "MCP9600.h"
 
 
-static char* mcp_thermocouple_bus_to_string(int i2c_bus) {
-   if (i2c_bus >= 3 || i2c_bus < 1) {
-        return "";
+static void mcp_thermocouple_bus_to_string(i2c_thermocouple* pdevice) {
+   if (pdevice->i2c_bus_int >= 3 || pdevice->i2c_bus < 1) {
+        pdevice->i2c_bus_str = "";
     } else {
         static char buffer[BUFFER_SIZE];
         snprintf(buffer, BUFFER_SIZE, "/dev/i2c-%d", i2c_bus);
-        return buffer;
+        pdevice->i2c_bus_str =  buffer;
     }
 }
 

@@ -29,15 +29,19 @@
         }
 
 typedef struct {
-    int i2c_bus;
+    union {
+        int i2c_bus_int;
+        char i2c_bus_str[BUFFER_SIZE];
+    };
+    //int i2c_bus;
     int i2c_address;
     int filedes;
     char thermocouple_type;
     char device_enabled;
-    char device_ID;
+    char device_ID[BUFFER_SIZE];
 } i2c_thermocouple;
 
-static char* mcp_thermocouple_bus_to_string(int i2c_bus);
+static void mcp_thermocouple_bus_to_string(i2c_thermocouple* pdevice);
 
 static void mcp_open_i2c_bus(i2c_thermocouple* pdevice);
 
