@@ -9,19 +9,21 @@
 #include "MCP9600.h"
 
 
-static void mcp_thermocouple_bus_to_string(i2c_thermocouple* pdevice) {
-   if (pdevice->i2c_bus_int >= 3 || pdevice->i2c_bus < 1) {
-        pdevice->i2c_bus_str = "";
+static char* mcp_thermocouple_bus_to_string(int i2c_bus) {
+   if (i2c_bus >= 3 || i2c_bus < 1) {
+        return "";
     } else {
         static char buffer[BUFFER_SIZE];
         snprintf(buffer, BUFFER_SIZE, "/dev/i2c-%d", i2c_bus);
-        pdevice->i2c_bus_str =  buffer;
+        return buffer;
     }
 }
 
 static void mcp_open_i2c_bus(i2c_thermocouple* pdevice) {
     int filedes;
-    char* bus = mcp_thermocouple_bus_to_string(pdevice->i2c_bus);
+    int i2c_bus = pdevice->i2c_bus_int;
+    strcpy(pdevice->i2c_bus_str, mcp_thermocouple_bus_to_string(i2c_bus));
+    char* bus = pdevice->i2c_bus_str;
     filedes = open(bus, O_RDWR);
     if (filedes < 0) {
         fprintf(stderr, 
@@ -40,7 +42,7 @@ static void mcp_open_i2c_bus(i2c_thermocouple* pdevice) {
 
 static void mcp_close_i2c_bus(i2c_thermocouple* pdevice) {
     if (close(pdevice->filedes) < 0) {
-        fprintf(stderr, "ERROR 4: I2C bus %d was unable to close.\n", pdevice->i2c_bus);
+        fprintf(stderr, "ERROR 4: I2C bus %d was unable to close.\n", pdevice->i2c_bus_int);
     }
     pdevice->filedes = -1;
 }

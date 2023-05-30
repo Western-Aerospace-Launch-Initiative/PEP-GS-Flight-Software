@@ -41,7 +41,7 @@ typedef struct {
     char device_ID[BUFFER_SIZE];
 } i2c_thermocouple;
 
-static void mcp_thermocouple_bus_to_string(i2c_thermocouple* pdevice);
+static char* mcp_thermocouple_bus_to_string(int i2c_bus);
 
 static void mcp_open_i2c_bus(i2c_thermocouple* pdevice);
 

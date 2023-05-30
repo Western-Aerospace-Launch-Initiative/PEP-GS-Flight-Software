@@ -15,8 +15,16 @@ TEST(MCP9600_Tests, mcp_device_enable_function){
     device.i2c_address = 0x76;
     device.thermocouple_type = K_TYPE;
     device.device_enabled = 0;
-    device.device_ID = "Device_1";
-    ASSERT_EQ(0.0, mcp_get_temp(&device));
+    strcpy(device.device_ID, "Device_1");
+
+    testing::internal::CaptureStderr();
+    std::string CapturedError = testing::internal::GetCapturedStderr();
+    std::string ExpectedError = "ERROR 3: The device \"Device_1\" is not enabled. Please enable it before continuing.";
+    std::string str;
+    EXPECT_PRED3([](auto str, auto CapturedError, auto ExpectedError) {
+        return str == CapturedError || str == ExpectedError;}, str, CapturedError, ExpectedError);
+    EXPECT_EQ(mcp_thermocouple_enable(&device), 0);
+    //ASSERT_EQ(0.0, mcp_get_temp(&device));
 }
 
 TEST(MCP9600_Tests, mcp_get_temp_check_valid_i2c_busses){
