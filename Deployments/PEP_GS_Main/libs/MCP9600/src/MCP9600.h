@@ -37,7 +37,7 @@ typedef struct {
     int i2c_address;
     int filedes;
     char thermocouple_type;
-    char device_enabled;
+    char enabled;
     char device_ID[BUFFER_SIZE];
 } i2c_thermocouple;
 
