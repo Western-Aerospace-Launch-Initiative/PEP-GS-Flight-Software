@@ -32,7 +32,7 @@
             char config[2];\
             config[0] = DEVICE_CONFIG_REGISTER;\
             config[1] = REGISTER_VALUE;\
-            write(DEVICE, config, 4);\
+            write(DEVICE, config, 2);\
             }\
         }
 

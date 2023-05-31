@@ -33,19 +33,19 @@ int mcp_thermocouple_disable(i2c_thermocouple* pdevice) {
 
 float mcp_get_temp(i2c_thermocouple* pdevice) {
     float temperature = 0.0;
+    mcp_open_i2c_bus(pdevice);
     int filedes = pdevice->filedes;
     if (pdevice->enabled == 0) {
         fprintf(stderr, ERROR_2);
         exit(1);
     }
-    mcp_open_i2c_bus(pdevice);
-    mcp_get_status(pdevice);
+        mcp_get_status(pdevice);
     char data[2];
     write(filedes, HOT_JUNCTION_TEMPERATURE_REGISTER, 1);
     if (read(filedes, data, 2) != 2) {
         fprintf(stderr, ERROR_4);
     }
-    if (data[0] & LOW_TEMP) {
+    if (data[0] & LOW_TEMP == LOW_TEMP) {
         temperature = (data[0] * 16 + data[1] / 16) - 4096;
     } else {
         temperature = (data[0] * 16 + data[1] / 16);
@@ -56,11 +56,11 @@ float mcp_get_temp(i2c_thermocouple* pdevice) {
 
 int mcp_get_status(i2c_thermocouple* pdevice) {
     int filedes = pdevice->filedes;
+    mcp_open_i2c_bus(pdevice);
     if (pdevice->enabled == 0) {
         fprintf(stderr, ERROR_2);
         exit(1);
     }
-    mcp_open_i2c_bus(pdevice);
     char val[1];
     char data[1];
     val[0] = STATUS_REGISTER;
