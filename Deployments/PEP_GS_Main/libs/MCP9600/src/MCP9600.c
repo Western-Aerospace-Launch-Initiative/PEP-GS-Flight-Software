@@ -39,7 +39,7 @@ float mcp_get_temp(i2c_thermocouple* pdevice) {
         exit(1);
     }
     mcp_open_i2c_bus(pdevice);
-    char val[1];
+    mcp_get_status(pdevice);
     char data[2];
     write(filedes, HOT_JUNCTION_TEMPERATURE_REGISTER, 1);
     if (read(filedes, data, 2) != 2) {
@@ -77,8 +77,8 @@ int mcp_get_status(i2c_thermocouple* pdevice) {
 static void mcp_open_i2c_bus(i2c_thermocouple* pdevice) {
     int filedes;
     int i2c_bus = pdevice->i2c_bus_int;
-    strcpy(pdevice->i2c_bus_str, mcp_thermocouple_bus_to_string(i2c_bus));
-    char* bus = pdevice->i2c_bus_str;
+    char bus[BUFFER_SIZE];
+    strcpy(bus, mcp_thermocouple_bus_to_string(i2c_bus));
     filedes = open(bus, O_RDWR);
     if (filedes < 0) {
         fprintf(stderr, ERROR_0);

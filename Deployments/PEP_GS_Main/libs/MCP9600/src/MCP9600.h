@@ -37,10 +37,7 @@
         }
 
 typedef struct {
-    union {
-        int i2c_bus_int;
-        char i2c_bus_str[BUFFER_SIZE];
-    };
+    int i2c_bus_int;
     int i2c_address;
     int filedes;
     char thermocouple_type;
