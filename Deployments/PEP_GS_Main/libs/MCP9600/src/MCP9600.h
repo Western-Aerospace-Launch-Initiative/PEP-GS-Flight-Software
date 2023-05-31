@@ -50,7 +50,7 @@ typedef struct {
 
 int mcp_thermocouple_enable(i2c_thermocouple* pdevice);
 
-int mcp_thermcouple_disable(i2c_thermocouple* pdevice);
+int mcp_thermocouple_disable(i2c_thermocouple* pdevice);
 
 float mcp_get_temp(i2c_thermocouple* pdevice);
 
