@@ -42,7 +42,7 @@ typedef struct {
     int filedes;
     char thermocouple_type;
     char enabled;
-    char device_ID[BUFFER_SIZE];
+    char ID[BUFFER_SIZE];
 } i2c_thermocouple;
 
 int mcp_thermocouple_enable(i2c_thermocouple* pdevice);
@@ -59,4 +59,5 @@ static void mcp_close_i2c_bus(i2c_thermocouple* pdevice);
 
 static char* mcp_thermocouple_bus_to_string(int i2c_bus);
 
+static void print_all_info(i2c_thermocouple* pdevice);
 #endif /* _MCP_THERMOCOUPLE_H */
