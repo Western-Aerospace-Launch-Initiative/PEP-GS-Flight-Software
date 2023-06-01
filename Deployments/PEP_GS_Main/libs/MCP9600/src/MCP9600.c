@@ -8,29 +8,6 @@
 
 #include "MCP9600.h"
 
-int main() {
-   
-    /*
-    i2c_thermocouple device;
-    device.i2c_bus_int = 2;
-    device.i2c_address = 0x60;
-    device.filedes = -1;
-    device.thermocouple_type = K_TYPE;
-    device.enabled = 0;
-    strcpy(device.ID, "Test device");
-    */
-
-    i2c_thermocouple* device = mcp_thermocouple_init(2, 0x60, K_TYPE, "Test device");
-
-    mcp_thermocouple_enable(device);    
-
-    char status = mcp_get_status(device);
-    printf("status: %x\n", status);
-    float temp1 = mcp_get_temp(device);
-    printf("%f\n", temp1);
-    mcp_thermocouple_disable(device);
-}
-
 i2c_thermocouple* mcp_thermocouple_init(
     int i2c_bus_int,
     int i2c_address,
