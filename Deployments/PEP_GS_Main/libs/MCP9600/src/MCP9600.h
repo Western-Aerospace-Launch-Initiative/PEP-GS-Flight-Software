@@ -22,7 +22,7 @@
 
 #define ERROR_0 "ERROR 0: The device \"%s\" was unable to be opened.\n", bus
 #define ERROR_1 "ERROR 1: The device address \"%d\" was found to be invalid.\n", pdevice->i2c_address
-#define ERROR_2 "ERROR 2: The device \"%s\" is not enabled. Please enable it before continuing.\n", pdevice->device_ID
+#define ERROR_2 "ERROR 2: The device \"%s\" is not enabled. Please enable it before continuing.\n", pdevice->ID
 #define ERROR_3 "ERROR 3: I2C bus %d was unable to close.\n", pdevice->i2c_bus_int
 #define ERROR_4 "ERROR 4: Temperature read failed.\n"
 // Device configuration macro that takes the device handle, access register 

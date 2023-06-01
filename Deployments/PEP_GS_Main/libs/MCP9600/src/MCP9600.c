@@ -106,10 +106,10 @@ float mcp_get_temp(i2c_thermocouple* pdevice) {
     printf("calculating temperature\n");
     print_all_info(pdevice);
 
-    if (data[0] & LOW_TEMP == LOW_TEMP) {
-        temperature = (data[0] * 16 + data[1] / 16) - 4096;
+    if ((data[0] & LOW_TEMP) == LOW_TEMP) {
+        temperature = (data[0] * 16 + data[1] / 16.0) - 4096;
     } else {
-        temperature = (data[0] * 16 + data[1] / 16);
+        temperature = (data[0] * 16 + data[1] / 16.0);
     }
 
     printf("closing device\n");
@@ -169,7 +169,7 @@ int mcp_get_status(i2c_thermocouple* pdevice) {
         printf("returning data");
         print_all_info(pdevice);
     
-        return data[1];
+        return data[0];
     }
 }
 
