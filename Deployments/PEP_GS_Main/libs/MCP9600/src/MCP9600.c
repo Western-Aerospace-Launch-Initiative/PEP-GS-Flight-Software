@@ -8,94 +8,139 @@
 
 #include "MCP9600.h"
 
-int mcp_thermocouple_enable(i2c_thermocouple* pdevice) { 
-    mcp_open_i2c_bus(pdevice); 
-    MCP_CONFIGURE(pdevice->filedes, THERMOCOUPLE_SENSOR_TYPE_REGISTER, 
-        pdevice->thermocouple_type)
-    MCP_CONFIGURE(pdevice->filedes, DEVICE_CONFIG_REGISTER, NORMAL_MODE)
-    mcp_close_i2c_bus(pdevice);
+int main() {
+   
+    /*
+    i2c_thermocouple device;
+    device.i2c_bus_int = 2;
+    device.i2c_address = 0x60;
+    device.filedes = -1;
+    device.thermocouple_type = K_TYPE;
+    device.enabled = 0;
+    strcpy(device.ID, "Test device");
+    */
+
+    i2c_thermocouple* device = mcp_thermocouple_init(2, 0x60, K_TYPE, "Test device");
+
+    mcp_thermocouple_enable(device);    
+
+    char status = mcp_get_status(device);
+    printf("status: %x\n", status);
+    float temp1 = mcp_get_temp(device);
+    printf("%f\n", temp1);
+    mcp_thermocouple_disable(device);
+}
+
+i2c_thermocouple* mcp_thermocouple_init(
+    int i2c_bus_int,
+    int i2c_address,
+    char thermocouple_type,
+    char* ID
+    ) {
+
+    if (strlen(ID) > BUFFER_SIZE) {
+        fprintf(stderr, ERROR_7);
+        return 0;
+    }
+
+    static i2c_thermocouple device;
+    
+    device.i2c_bus_int = i2c_bus_int;
+    device.i2c_address = i2c_address;
+    device.filedes = INIT_FILEDES;
+    device.thermocouple_type = thermocouple_type;
+    strcpy(device.ID, ID);
+    return &device;
+}
+
+int mcp_thermocouple_enable(i2c_thermocouple* pdevice) {
+        
+    mcp_open_i2c_bus(pdevice);
     pdevice->enabled = 1;
+    usleep(HALF_SECOND);
     return 0;
 }
 
 int mcp_thermocouple_disable(i2c_thermocouple* pdevice) {
-    mcp_open_i2c_bus(pdevice);
-    int filedes = pdevice->filedes;
-    if (pdevice->enabled == 0) {
-        fprintf(stderr, ERROR_2);
-        exit(1);
-    } 
-    MCP_CONFIGURE(filedes, DEVICE_CONFIG_REGISTER, SHUTDOWN_MODE)
     mcp_close_i2c_bus(pdevice);
     pdevice->enabled = 0;
     return 0;
 }
 
 float mcp_get_temp(i2c_thermocouple* pdevice) {
-    float temperature = 0.0;
-    mcp_open_i2c_bus(pdevice);
-    int filedes = pdevice->filedes;
-    if (pdevice->enabled == 0) {
+   
+    if (!pdevice->enabled) {
         fprintf(stderr, ERROR_2);
-        exit(1);
+        return 0.0;
     }
-        mcp_get_status(pdevice);
-    char data[2];
-    write(filedes, HOT_JUNCTION_TEMPERATURE_REGISTER, 1);
-    if (read(filedes, data, 2) != 2) {
+
+    char reg[1] = {0x00};
+    if (write(pdevice->filedes, reg, 1) < 0) {
+        fprintf(stderr, ERROR_6);
+        return -1;
+    }
+
+    char data[2] = {0};
+    if (read(pdevice->filedes, data, 2) != 2) {
         fprintf(stderr, ERROR_4);
-    }
-    if (data[0] & LOW_TEMP == LOW_TEMP) {
-        temperature = (data[0] * 16 + data[1] / 16) - 4096;
+        return 0;
     } else {
-        temperature = (data[0] * 16 + data[1] / 16);
+          if  (data[0] & 0x80) { // if low temp
+              return data[0] * 16 + data[1] / 16.0 - 4096;
+        } else {
+              return data[0] * 16 + data[1] / 16.0;
+        }
     }
-    mcp_close_i2c_bus(pdevice);
-    return temperature;
 }
 
-int mcp_get_status(i2c_thermocouple* pdevice) {
-    int filedes = pdevice->filedes;
-    mcp_open_i2c_bus(pdevice);
-    if (pdevice->enabled == 0) {
+char mcp_get_status(i2c_thermocouple* pdevice) {
+    
+    if (!pdevice->enabled) {
         fprintf(stderr, ERROR_2);
-        exit(1);
+        return 0xff;
     }
-    char val[1];
-    char data[1];
-    val[0] = STATUS_REGISTER;
-    write(filedes, val, 1);
-    if (read(filedes, data, 1) != 1) {
-        mcp_close_i2c_bus(pdevice);
-        exit(1);
-    } else {
-        mcp_close_i2c_bus(pdevice);
-        return data[1];
+
+    char reg[1] = {0};
+    reg[0] = 0x04;
+
+    if(write(pdevice->filedes, reg, 1) < 0) {
+        fprintf(stderr, ERROR_6);
+        return -1;
     }
+
+    char data[1] = {0};
+
+    if(read(pdevice->filedes, data, 1) != 1) {
+        fprintf(stderr, ERROR_5);
+        return 0xff;
+    }
+
+    return data[0]; 
 }
 
-static void mcp_open_i2c_bus(i2c_thermocouple* pdevice) {
-    int filedes;
-    int i2c_bus = pdevice->i2c_bus_int;
-    char bus[BUFFER_SIZE];
-    strcpy(bus, mcp_thermocouple_bus_to_string(i2c_bus));
-    filedes = open(bus, O_RDWR);
-    if (filedes < 0) {
+static int mcp_open_i2c_bus(i2c_thermocouple* pdevice) {
+   
+    char* bus = mcp_thermocouple_bus_to_string(pdevice->i2c_bus_int);
+    if ((pdevice->filedes = open(bus, O_RDWR)) < 0) {
         fprintf(stderr, ERROR_0);
-        exit(1);
+        return -1;
     }
-    pdevice->filedes = filedes;
-    if (ioctl(filedes, I2C_SLAVE, pdevice->i2c_address) < 0) {
-        fprintf(stderr, ERROR_1);
-        exit(1);
-    }
+    
+    ioctl(pdevice->filedes, I2C_SLAVE, pdevice->i2c_address);
+
+    MCP_CONFIGURE(pdevice->filedes, THERMOCOUPLE_SENSOR_TYPE_REGISTER, K_TYPE)
+    MCP_CONFIGURE(pdevice->filedes, DEVICE_CONFIG_REGISTER, NORMAL_MODE)
+    return 0;
 }
 
-static void mcp_close_i2c_bus(i2c_thermocouple* pdevice) {
+static int mcp_close_i2c_bus(i2c_thermocouple* pdevice) {
+    
+    MCP_CONFIGURE(pdevice->filedes, DEVICE_CONFIG_REGISTER, SHUTDOWN_MODE)
     if (close(pdevice->filedes) < 0) {
         fprintf(stderr, ERROR_3);
+        return -1;
     }
-    pdevice->filedes = -1;
+    return 0;
 }
 
 static char* mcp_thermocouple_bus_to_string(int i2c_bus) {
