@@ -29,6 +29,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - run: ls
       - name: Generate Pages
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
@@ -38,9 +39,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - run: pwd
-      - run: echo "please"
-      - run: ls
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
