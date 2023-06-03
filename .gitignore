@@ -11,5 +11,6 @@ CTestTestfile.cmake
 _deps
 
 # User Added
-build-artifacts
-build-fprime-automatic-*
+build-*
+PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/docs/latex
+PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/docs/html
