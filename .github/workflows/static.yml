@@ -29,17 +29,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: echo "please"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - run: pwd
+      - run: echo "please"
+      - run: ls
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload doxygen files
-          path: '/home/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/libs/MCP9600/docs/html'
+          path: '/home/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/docs/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
