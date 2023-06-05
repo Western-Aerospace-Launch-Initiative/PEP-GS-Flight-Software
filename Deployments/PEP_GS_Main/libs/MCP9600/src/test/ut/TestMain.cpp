@@ -102,5 +102,6 @@ TEST(MCP9600_Tests, mcp_get_status_function){
             return str == CapturedError || str == ExpectedError;}, 
             str, CapturedError, ExpectedError);
     }
-
+    mcp_thermocouple_enable(device);
+    EXPECT_EQ(mcp_get_status(device), 0x4f);
 }

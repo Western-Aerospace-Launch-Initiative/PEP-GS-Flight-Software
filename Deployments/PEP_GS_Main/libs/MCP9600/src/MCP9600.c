@@ -38,15 +38,6 @@
  * the device.
  */
 
-int main() {
-    i2c_thermocouple* device = mcp_thermocouple_init(2, 0x60, K_TYPE, "t");
-    mcp_thermocouple_enable(device);
-    float temp = mcp_get_temp(device);
-    char status = mcp_get_status(device);
-    printf("Temp: %f\n Status: %x\n", temp, status);
-    return 0;
-}
-
 i2c_thermocouple* mcp_thermocouple_init(
     int i2c_bus_int,
     int i2c_address,
