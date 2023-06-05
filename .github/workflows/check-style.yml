@@ -43,7 +43,7 @@ jobs:
 
     # Builds your CMake project. (This step is optional, as it is not required for code analysis).
     - name: Build project (optional)
-      run: cmake --build build
+      run: cmake --build Deployments/PEP_GS_Main/libs/MCP9600/build
 
     # Runs code analysis with C/C++test.
     - name: Run C/C++test
@@ -53,7 +53,7 @@ jobs:
       with:
         testConfig: 'builtin://The Power of Ten'
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
-        input: build/compile_commands.json
+        input: Deployments/PEP_GS_Main/libs/MCP9600/build/compile_commands.json
         # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
         # reportFormat: xml,html,custom
         # additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
