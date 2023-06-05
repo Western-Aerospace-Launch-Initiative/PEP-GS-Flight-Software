@@ -41,7 +41,7 @@ jobs:
       run: pwd
 
     - name: Find project directory
-      run: cd ../../../PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/Deployments/libs/MCP9600
+      run: cd ~/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/Deployments/libs/MCP9600
 
     # Configures your CMake project. Be sure the compile_commands.json file is created.
     - name: Configure project
