@@ -37,15 +37,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Debug
-      run: pwd
-
     - name: Find project directory
       run: cd /home/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600
 
     # Configures your CMake project. Be sure the compile_commands.json file is created.
     - name: Configure project
-      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B build
+      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S src/ -B /build
 
     # Builds your CMake project. (This step is optional, as it is not required for code analysis).
     - name: Build project (optional)
@@ -57,6 +54,7 @@ jobs:
       uses: parasoft/run-cpptest-action@2.0.1
       # Optional parameters for 'run-cpptest-action'.
       with:
+        testConfig: 'builtin://The Power of Ten'
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: build/compile_commands.json
         # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
