@@ -1,4 +1,4 @@
-/***************************
+/**************************
  * MCP9600.c 
  *
  * Version 1.0.0
@@ -37,6 +37,16 @@
  * @param ID is a string 12 characters in length that can be used to identify
  * the device.
  */
+
+int main() {
+    i2c_thermocouple* device = mcp_thermocouple_init(2, 0x60, K_TYPE, "t");
+    mcp_thermocouple_enable(device);
+    float temp = mcp_get_temp(device);
+    char status = mcp_get_status(device);
+    printf("Temp: %f\n Status: %x\n", temp, status);
+    return 0;
+}
+
 i2c_thermocouple* mcp_thermocouple_init(
     int i2c_bus_int,
     int i2c_address,
@@ -86,6 +96,7 @@ int mcp_thermocouple_enable(i2c_thermocouple* pdevice) {
  */
 int mcp_thermocouple_disable(i2c_thermocouple* pdevice) {
     mcp_close_i2c_bus(pdevice);
+    pdevice->filedes = -1;
     pdevice->enabled = 0;
     return 0;
 }
@@ -177,7 +188,11 @@ char mcp_get_status(i2c_thermocouple* pdevice) {
  *
  * */
 static int mcp_open_i2c_bus(i2c_thermocouple* pdevice) {
-   
+    
+    if (pdevice->enabled == 1) {
+        fprintf(stderr, ERROR_8);
+        return -1;
+    }
     char* bus = mcp_thermocouple_bus_to_string(pdevice->i2c_bus_int);
     if ((pdevice->filedes = open(bus, O_RDWR)) < 0) {
         fprintf(stderr, ERROR_0);

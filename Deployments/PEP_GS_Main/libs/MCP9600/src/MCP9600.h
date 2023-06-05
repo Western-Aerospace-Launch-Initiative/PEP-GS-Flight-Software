@@ -113,6 +113,7 @@
 #define ERROR_5 "ERROR 5: Device \"%s\" read failed.\n", pdevice->ID
 #define ERROR_6 "ERROR_6: Device \"%s\" write failed.\n", pdevice->ID
 #define ERROR_7 "ERROR_7: Device ID is larger than %d characters. Please shorten it.\n", BUFFER_SIZE
+#define ERROR_8 "ERROR 8: The device \"%s\" is already enabled.", pdevice->ID
 
 /*! MCP_CONFIGURE 
  * is a macro that writes 2 bytes to a specific MCP9600 
