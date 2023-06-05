@@ -37,12 +37,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Find project directory
-      run: cd /home/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600
-
     # Configures your CMake project. Be sure the compile_commands.json file is created.
     - name: Configure project
-      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S src/ -B /build
+      run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S Deployments/PEP_GS_Main/libs/MCP9600/src/ -B Deployments/PEP_GS_Main/libs/MCP9600/build
 
     # Builds your CMake project. (This step is optional, as it is not required for code analysis).
     - name: Build project (optional)
