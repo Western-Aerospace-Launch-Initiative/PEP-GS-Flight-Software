@@ -42,7 +42,7 @@ i2c_thermocouple* mcp_thermocouple_init(
     int i2c_bus_int,
     int i2c_address,
     char thermocouple_type,
-    char* ID
+    const char* ID
     ) {
 
     // Verify ID isnt too long
@@ -57,7 +57,7 @@ i2c_thermocouple* mcp_thermocouple_init(
     device.i2c_address = i2c_address;
     device.filedes = INIT_FILEDES;
     device.thermocouple_type = thermocouple_type;
-    strcpy(device.ID, ID);
+    device.ID = ID;
     return &device;
 }
 

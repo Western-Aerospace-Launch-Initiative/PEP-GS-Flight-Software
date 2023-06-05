@@ -113,7 +113,7 @@
 #define ERROR_5 "ERROR 5: Device \"%s\" read failed.\n", pdevice->ID
 #define ERROR_6 "ERROR_6: Device \"%s\" write failed.\n", pdevice->ID
 #define ERROR_7 "ERROR_7: Device ID is larger than %d characters. Please shorten it.\n", BUFFER_SIZE
-#define ERROR_8 "ERROR 8: The device \"%s\" is already enabled.", pdevice->ID
+#define ERROR_8 "ERROR 8: The device \"%s\" is already enabled.\n", pdevice->ID
 
 /*! MCP_CONFIGURE 
  * is a macro that writes 2 bytes to a specific MCP9600 
@@ -149,14 +149,14 @@ typedef struct {
     int filedes; /*!< an integer that stores the file designator */
     char thermocouple_type; /*!< a char that stores the thermocouple type*/
     char enabled;/*!< a char that stores the enabled status*/ 
-    char ID[BUFFER_SIZE]; /*!< a string that stores the device ID*/ 
+    const char* ID; /*!< a string that stores the device ID*/ 
 } i2c_thermocouple;
 
 i2c_thermocouple* mcp_thermocouple_init(
     int i2c_bus_int,
     int i2c_address,
     char thermocouple_type,
-    char* ID
+    const char* ID
     );
 
 int mcp_thermocouple_enable(i2c_thermocouple* pdevice);
