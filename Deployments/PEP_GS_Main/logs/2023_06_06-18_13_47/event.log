@@ -1,0 +1,2 @@
+2023-06-06 18:14:14,(2(0)-1686089654:353651),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe03 dispatched to port 8
+2023-06-06 18:14:14,(2(0)-1686089654:353690),fatalAdapter.AF_ASSERT_0,16896,EventSeverity.FATAL,Assert in file /home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/build-fpri, line 237

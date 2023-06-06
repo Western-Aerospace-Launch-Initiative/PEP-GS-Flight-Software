@@ -1,0 +1,6 @@
+2023-06-06 18:15:51,(2(0)-1686089751:659660),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x500 dispatched to port 0
+2023-06-06 18:15:51,(2(0)-1686089751:659715),cmdDisp.NoOpReceived,1287,EventSeverity.ACTIVITY_HI,Received a NO-OP command
+2023-06-06 18:15:51,(2(0)-1686089751:659722),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x500 completed
+2023-06-06 18:16:07,(2(0)-1686089767:691977),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe00 dispatched to port 8
+2023-06-06 18:16:07,(2(0)-1686089767:691995),tempSender.THERMOCOUPLE_ENABLED,3584,EventSeverity.ACTIVITY_LO,Thermocouple test has been enabled.
+2023-06-06 18:16:07,(2(0)-1686089767:692131),fatalAdapter.AF_ASSERT_0,16896,EventSeverity.FATAL,Assert in file /home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/build-fpri, line 237

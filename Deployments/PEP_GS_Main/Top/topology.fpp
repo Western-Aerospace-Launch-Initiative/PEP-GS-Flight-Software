@@ -45,6 +45,8 @@ module PEP_GS_Main {
     instance textLogger
     instance uplink
     instance systemResources
+    instance tempSender
+    instance tempReceiver
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
@@ -128,7 +130,10 @@ module PEP_GS_Main {
     }
 
     connections PEP_GS_Main {
-      # Add here connections to user-defined components
+      tempSender.thermocoupleIdOut -> tempReceiver.thermocoupleIdIn
+      tempReceiver.EnabledOut -> tempSender.EnabledIn
+      tempReceiver.TempOut -> tempSender.TempIn
+      tempReceiver.statusOut -> tempSender.statusIn
     }
 
   }

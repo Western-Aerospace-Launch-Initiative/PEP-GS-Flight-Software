@@ -1,0 +1,17 @@
+2023-06-06 19:03:31,(2(0)-1686092611:4768),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x500 dispatched to port 0
+2023-06-06 19:03:31,(2(0)-1686092611:4838),cmdDisp.NoOpReceived,1287,EventSeverity.ACTIVITY_HI,Received a NO-OP command
+2023-06-06 19:03:31,(2(0)-1686092611:4845),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x500 completed
+2023-06-06 19:03:39,(2(0)-1686092619:168232),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xf00 dispatched to port 8
+2023-06-06 19:03:39,(2(0)-1686092619:168315),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xf00 completed
+2023-06-06 19:03:53,(2(0)-1686092633:198010),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe03 dispatched to port 9
+2023-06-06 19:03:53,(2(0)-1686092633:198142),tempSender.STATUS_RECEIVED,3587,EventSeverity.ACTIVITY_HI,Thermocouple h is returning status code: 0.
+2023-06-06 19:03:53,(2(0)-1686092633:198251),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe03 completed
+2023-06-06 19:04:08,(2(0)-1686092648:193639),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe02 dispatched to port 9
+2023-06-06 19:04:08,(2(0)-1686092648:193694),tempSender.TEMP_RECEIVED,3586,EventSeverity.ACTIVITY_HI,Thermocouple h is measuring 0.0 degrees celcius.
+2023-06-06 19:04:08,(2(0)-1686092648:193805),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe02 completed
+2023-06-06 19:04:54,(2(0)-1686092694:976530),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe00 dispatched to port 9
+2023-06-06 19:04:54,(2(0)-1686092694:976545),tempSender.THERMOCOUPLE_ENABLED,3584,EventSeverity.ACTIVITY_LO,Thermocouple j has been enabled.
+2023-06-06 19:04:54,(2(0)-1686092694:976688),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe00 completed
+2023-06-06 19:05:08,(2(0)-1686092708:995514),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe01 dispatched to port 9
+2023-06-06 19:05:08,(2(0)-1686092708:995592),tempSender.THERMOCOUPLE_DISABLED,3585,EventSeverity.ACTIVITY_HI,Thermocouple j has been disabled.
+2023-06-06 19:05:08,(2(0)-1686092708:995721),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe01 completed

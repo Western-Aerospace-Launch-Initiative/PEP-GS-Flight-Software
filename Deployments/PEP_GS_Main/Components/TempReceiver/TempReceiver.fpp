@@ -1,11 +1,26 @@
 module PEP_GS_Main {
+   
     @ Component for receiving gds temperature commands
     active component TempReceiver {
 
-        # One async command/port is required for active components
-        # This should be overridden by the developers with a useful command/port
         @ TODO
         async command TODO opcode 0
+
+        # General Ports
+
+        @port for receiving thermocouple iD
+        async input port thermocoupleIdIn: ThermocoupleID
+
+        @port for sending enabled value
+        output port EnabledOut: Enabled
+
+        @port for sending temperature
+        output port TempOut: Temperature
+
+        @port for sending status codes
+        output port statusOut: Status
+
+        # Events
 
         ##############################################################################
         #### Uncomment the following examples to start customizing your component ####
@@ -25,6 +40,8 @@ module PEP_GS_Main {
 
         # @ Example parameter
         # param PARAMETER_NAME: U32
+ 
+
 
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #

@@ -82,6 +82,16 @@ module PEP_GS_Main {
     stack size Default.STACK_SIZE \
     priority 96
 
+  instance tempSender: PEP_GS_Main.TempSender base id 0x0E00 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 100
+
+  instance tempReceiver: PEP_GS_Main.TempReceiver base id 0x0F00 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 100
+
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------

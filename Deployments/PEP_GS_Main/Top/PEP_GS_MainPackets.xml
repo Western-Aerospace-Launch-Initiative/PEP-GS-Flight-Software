@@ -73,6 +73,11 @@
         <channel name="systemResources.CPU_15"/>
     </packet>
 
+    <packet name="TempSender" id="8" level="2">
+        <channel name="tempSender.ENABLED"/>
+        <channel name="tempSender.TEMPERATURE"/>
+        <channel name="tempSender.STATUS"/>
+    </packet>
     <!-- Ignored packets -->
 
     <ignore>

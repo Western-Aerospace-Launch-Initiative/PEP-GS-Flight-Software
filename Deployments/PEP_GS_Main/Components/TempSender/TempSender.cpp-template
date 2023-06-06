@@ -38,7 +38,7 @@ namespace PEP_GS_Main {
         bool enabled
     )
   {
-    this->tlmWrite_ENABLED(enabled);
+    // TODO
   }
 
   void TempSender ::
@@ -47,7 +47,7 @@ namespace PEP_GS_Main {
         F32 result
     )
   {
-    this->tlmWrite_TEMPERATURE(result);
+    // TODO
   }
 
   void TempSender ::
@@ -56,7 +56,7 @@ namespace PEP_GS_Main {
         U8 statusID
     )
   {
-    this->tlmWrite_STATUS(statusID);
+    // TODO
   }
 
   // ----------------------------------------------------------------------
@@ -70,8 +70,7 @@ namespace PEP_GS_Main {
         const Fw::CmdStringArg& identifier
     )
   {
-    this->log_ACTIVITY_LO_THERMOCOUPLE_ENABLED(identifier);
-    this->thermocoupleIdOut_out(0, identifier);  
+    // TODO
     this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
   }
 
@@ -82,8 +81,7 @@ namespace PEP_GS_Main {
         const Fw::CmdStringArg& identifier
     )
   {
-    this->log_ACTIVITY_HI_THERMOCOUPLE_DISABLED(identifier);
-    this->thermocoupleIdOut_out(0, identifier);
+    // TODO
     this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
   }
 
@@ -94,8 +92,7 @@ namespace PEP_GS_Main {
         const Fw::CmdStringArg& identifier
     )
   {
-    this->thermocoupleIdOut_out(0, identifier);
-    this->log_ACTIVITY_HI_TEMP_RECEIVED(identifier, 0.0);
+    // TODO
     this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
   }
 
@@ -106,8 +103,7 @@ namespace PEP_GS_Main {
         const Fw::CmdStringArg& identifier
     )
   {
-    this->thermocoupleIdOut_out(0, identifier);
-    this->log_ACTIVITY_HI_STATUS_RECEIVED(identifier, 0);
+    // TODO
     this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
   }
 

@@ -10,13 +10,13 @@ module PEP_GS_Main {
         output port thermocoupleIdOut: ThermocoupleID 
 
         @ Port for receiving enabled value
-        async input port EnabledIn: Enabled
+        async input port EnabledIn: Enabled 
 
         @ Port for receiving temperature
         async input port TempIn: Temperature
 
         @ Port for receiving status codes
-        async input port statusIn: Status
+        async input port statusIn: Status 
             
 
         # Commands
