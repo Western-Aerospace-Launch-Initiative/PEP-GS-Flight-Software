@@ -1,4 +1,4 @@
-#####
+####
 # 'PEP_GS_Main' Deployment:
 #
 # This sets up the build for the 'PEP_GS_Main' Application, including custom
@@ -35,5 +35,9 @@ set(MOD_DEPS ${PROJECT_NAME}/Top)
 #User Added
 #Might need this?
 #set(MOD_DEPS ${CMAKE_CURRENT_LIST_DIR}/libs)
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components/TempSender/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components/TempReceiver/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Datatypes/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Ports/")
 
 register_fprime_deployment()
