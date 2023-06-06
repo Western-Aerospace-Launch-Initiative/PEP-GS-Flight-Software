@@ -26,7 +26,14 @@ include("${FPRIME_FRAMEWORK_PATH}/cmake/FPrime-Code.cmake")
 ###
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Top/")
 
+#User Added
+#add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/libs/")
+
 set(SOURCE_FILES "${CMAKE_CURRENT_LIST_DIR}/Main.cpp")
 set(MOD_DEPS ${PROJECT_NAME}/Top)
+
+#User Added
+#Might need this?
+#set(MOD_DEPS ${CMAKE_CURRENT_LIST_DIR}/libs)
 
 register_fprime_deployment()
