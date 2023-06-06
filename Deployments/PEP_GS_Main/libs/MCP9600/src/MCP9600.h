@@ -95,7 +95,7 @@
 #define LOW_TEMP 0x80
 
 /*! HALF_SECOND 
- * is a macro that references an int valuew 500000. This is 
+ * is a macro that references an int value 500000. This is 
  * used in the stdlib usleep() function to sleep for 500000 microseconds or 
  * half a second. This allows for the thermocouple to wake from shutdown mode 
  * before giving access back to the user to prevent trying to read the device
