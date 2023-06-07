@@ -152,16 +152,17 @@ typedef struct {
     const char* ID; /*!< a string that stores the device ID*/ 
 } i2c_thermocouple;
 
+
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 i2c_thermocouple* mcp_thermocouple_init(
     int i2c_bus_int,
     int i2c_address,
     char thermocouple_type,
     const char* ID
     );
-
-#ifdef __cplusplus
-extern "C"{
-#endif
 
 int mcp_thermocouple_enable(i2c_thermocouple* pdevice);
 
