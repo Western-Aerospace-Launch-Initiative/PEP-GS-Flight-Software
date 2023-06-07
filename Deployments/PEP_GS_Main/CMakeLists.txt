@@ -39,5 +39,9 @@ set(MOD_DEPS ${PROJECT_NAME}/Top)
 #User Added
 #Might need this?
 #set(MOD_DEPS ${CMAKE_CURRENT_LIST_DIR}/libs)
-
 register_fprime_deployment()
+
+get_module_name("${CMAKE_CURRENT_LIST_DIR}")
+include_directories(${CMAKE_CURRENT_LIST_DIR}/libs/MCP9600/src/)
+find_library(MCP MCP9600 ${CMAKE_CURRENT_LIST_DIR}/libs/MCP9600/build/)
+target_link_libraries(${MODULE_NAME} ${MCP})

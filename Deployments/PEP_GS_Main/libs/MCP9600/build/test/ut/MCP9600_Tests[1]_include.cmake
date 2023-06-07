@@ -1,0 +1,5 @@
+if(EXISTS "/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/build/test/ut/MCP9600_Tests[1]_tests.cmake")
+  include("/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/build/test/ut/MCP9600_Tests[1]_tests.cmake")
+else()
+  add_test(MCP9600_Tests_NOT_BUILT MCP9600_Tests_NOT_BUILT)
+endif()
