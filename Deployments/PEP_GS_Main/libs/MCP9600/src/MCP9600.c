@@ -48,7 +48,7 @@ i2c_thermocouple* mcp_thermocouple_init(
     // Verify ID isnt too long
     if (strlen(ID) > BUFFER_SIZE) {
         fprintf(stderr, ERROR_7);
-        return 0;
+        return NULL; // Cant return 1 becuase its a pointer
     }
 
     static i2c_thermocouple device;
@@ -106,7 +106,7 @@ float mcp_get_temp(i2c_thermocouple* pdevice) {
   
     if (!pdevice->enabled) {
         fprintf(stderr, ERROR_2);
-        return 0.0;
+        return -1;
     }
 
     char reg[1] = {0x00};
@@ -118,7 +118,7 @@ float mcp_get_temp(i2c_thermocouple* pdevice) {
     char data[2] = {0};
     if (read(pdevice->filedes, data, 2) != 2) {
         fprintf(stderr, ERROR_4);
-        return 0;
+        return -1;
     } else {
           if  (data[0] & 0x80) { // if low temp
               return data[0] * 16 + data[1] / 16.0 - 4096;
@@ -142,7 +142,7 @@ char mcp_get_status(i2c_thermocouple* pdevice) {
     
     if (!pdevice->enabled) {
         fprintf(stderr, ERROR_2);
-        return 0xff;
+        return -1;
     }
 
     char reg[1] = {0};
@@ -157,7 +157,7 @@ char mcp_get_status(i2c_thermocouple* pdevice) {
 
     if(read(pdevice->filedes, data, 1) != 1) {
         fprintf(stderr, ERROR_5);
-        return 0xff;
+        return -1;
     }
 
     return data[0]; 
