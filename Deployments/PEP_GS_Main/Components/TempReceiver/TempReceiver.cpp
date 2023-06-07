@@ -7,9 +7,7 @@
 
 #include <PEP_GS_Main/Components/TempReceiver/TempReceiver.hpp>
 #include <FpConfig.hpp>
-extern "C" {
-    #include "../../libs/MCP9600/src/MCP9600.h"
-}
+#include "MCP9600.h"
 namespace PEP_GS_Main {
 
   // ----------------------------------------------------------------------
@@ -40,11 +38,17 @@ namespace PEP_GS_Main {
         const id_stringString &id_string
     )
   {
-      i2c_thermocouple* device;
-      device = mcp_thermocouple_init(2,0x60,K_TYPE,"Test");
-   bool enabled = true;
-    F32 temp = 32.0;
-    U8 status = 0x65;
+    i2c_thermocouple device;
+    device.i2c_bus_int = 2; /*!< an integer that stores the i2c bus*/
+    device.i2c_address = 0x60; /*!< an integer that stores the i2c address*/
+    device.filedes = -1; /*!< an integer that stores the file designator */
+    device.thermocouple_type = K_TYPE; /*!< a char that stores the thermocouple type*/
+    device.enabled = 0;/*!< a char that stores the enabled status*/ 
+    /*!< a string that stores the device ID*/ 
+
+    bool enabled = true;
+    F32 temp = mcp_get_temp(&device);
+    U8 status = device.i2c_address;
     this->EnabledOut_out(0, enabled);
     this->TempOut_out(0, temp);
     this->statusOut_out(0, status); 

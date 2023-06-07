@@ -159,6 +159,10 @@ i2c_thermocouple* mcp_thermocouple_init(
     const char* ID
     );
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
 int mcp_thermocouple_enable(i2c_thermocouple* pdevice);
 
 int mcp_thermocouple_disable(i2c_thermocouple* pdevice);
@@ -174,5 +178,10 @@ static int mcp_close_i2c_bus(i2c_thermocouple* pdevice);
 static void mcp_thermocouple_configure(i2c_thermocouple* pdevice);
 
 static char* mcp_thermocouple_bus_to_string(int i2c_bus);
+
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif /* _MCP_THERMOCOUPLE_H */

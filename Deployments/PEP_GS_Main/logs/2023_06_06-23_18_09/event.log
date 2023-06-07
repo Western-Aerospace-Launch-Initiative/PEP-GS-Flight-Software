@@ -1,0 +1,6 @@
+2023-06-06 23:18:32,(2(0)-1686107912:292757),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe02 dispatched to port 9
+2023-06-06 23:18:32,(2(0)-1686107912:292871),tempSender.TEMP_RECEIVED,3586,EventSeverity.ACTIVITY_HI,Thermocouple 8 is measuring 0.0 degrees celcius.
+2023-06-06 23:18:32,(2(0)-1686107912:292953),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe02 completed
+2023-06-06 23:19:16,(2(0)-1686107956:676284),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe00 dispatched to port 9
+2023-06-06 23:19:16,(2(0)-1686107956:676347),tempSender.THERMOCOUPLE_ENABLED,3584,EventSeverity.ACTIVITY_LO,Thermocouple j has been enabled.
+2023-06-06 23:19:16,(2(0)-1686107956:676600),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe00 completed
