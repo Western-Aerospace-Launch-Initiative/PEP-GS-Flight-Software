@@ -21,9 +21,11 @@ set(SOURCE_FILES
 register_fprime_module()
 
 get_module_name("${CMAKE_CURRENT_LIST_DIR}")
-find_library(MCP MCP9600 "${CMAKE_CURRENT_LIST_DIR}/../../libs/MCP9600/build/")
-find_path(MCP9600_INCLUDES MCP9600.h "${CMAKE_CURRENT_LIST_DIR}/../../libs/MCP9600/src/")
-include_directories("${MCP9600_INCLUDES}")
+find_library(MCP MCP9600 ${CMAKE_CURRENT_LIST_DIR}/../../libs/MCP9600/build/)
+find_path(MCP9600_INCLUDES MCP9600.h ${CMAKE_CURRENT_LIST_DIR}/../../libs/MCP9600/src/)
+#find_library(MCP MCP9600 "/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/build")
+#find_path(MCP9600_INCLUDES MCP9600.h "/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/src/")
+include_directories(${MCP9600_INCLUDES})
 
 target_link_libraries(
     ${MODULE_NAME}
