@@ -48,6 +48,7 @@ namespace PEP_GS_Main {
     )
   {
     this->tlmWrite_TEMPERATURE(result);
+    this->log_ACTIVITY_HI_TEMP_RECEIVED("ID", result); 
   }
 
   void TempSender ::
@@ -95,7 +96,6 @@ namespace PEP_GS_Main {
     )
   {
     this->thermocoupleIdOut_out(0, identifier);
-    this->log_ACTIVITY_HI_TEMP_RECEIVED(identifier, 0.0);
     this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
   }
 
