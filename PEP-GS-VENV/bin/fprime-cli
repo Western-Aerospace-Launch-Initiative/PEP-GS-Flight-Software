@@ -1,4 +1,4 @@
-#!/home/noahbraasch/WALI/PEP-GS-Flight-Software/PEP-GS-VENV/bin/python
+#!/home/noahbraasch/WALI/PEP-GS-Flight-Software/PEP-GS-VENV/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

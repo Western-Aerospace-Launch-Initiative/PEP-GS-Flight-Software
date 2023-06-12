@@ -1,3 +1,0 @@
-#!/home/noahbraasch/WALI/PEP-GS-Flight-Software/PEP_GS_VENV_NEW/bin/python3
-from Cheetah.CheetahWrapper import _cheetah_compile
-_cheetah_compile()

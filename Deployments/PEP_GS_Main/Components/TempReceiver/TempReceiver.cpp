@@ -46,12 +46,13 @@ namespace PEP_GS_Main {
     //device.enabled = 0;/*!< a char that stores the enabled status*/ 
     /*!< a string that stores the device ID*/ 
     device = mcp_thermocouple_init(2, 0x60, K_TYPE, "Test");
-    bool enabled = true;
+    mcp_thermocouple_enable(device); 
     F32 temp = mcp_get_temp(device);
     U8 status = device->i2c_address;
-    this->EnabledOut_out(0, enabled);
+    this->EnabledOut_out(0, 1);
     this->TempOut_out(0, temp);
     this->statusOut_out(0, status); 
+    mcp_thermocouple_disable(device);
   }
 
   // ----------------------------------------------------------------------
