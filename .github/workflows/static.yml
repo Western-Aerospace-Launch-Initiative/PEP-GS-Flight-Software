@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload doxygen files
-          path: '/home/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/MCP9600/docs/html'
+          path: '/home/runner/work/PEP-GS-Flight-Software/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/docs/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
