@@ -1161,5 +1161,7 @@ uint16_t COMMON_FormatUnixTimeCmd(uint8_t* tcBuffer, U32 time, U16 milliSec);
  ******************************************************************************/
 uint16_t COMMON_FormatUnixTimeSaveCmd(uint8_t* tcBuffer, Boolean saveNow, Boolean saveOnUpdate, Boolean savePeriodic, U8 period);
 
-
+#ifdef __cplusplus
+}
+#endif
 #endif  // define __CUBECOMPUTER4COMMON2_H

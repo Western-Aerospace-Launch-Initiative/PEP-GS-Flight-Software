@@ -1,7 +1,7 @@
 # Library Documentation
 
 ### ADCS Version 1.0.0
- - Adds Supplied Source Code
+ - Adds supplied code
 
 ### MCP9600 Version 1.0.0
  - Adds support for i2c thermocouple enable

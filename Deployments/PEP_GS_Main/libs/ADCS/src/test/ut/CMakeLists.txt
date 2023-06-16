@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(MCP9600_Tests)
+project(ADCS_Tests)
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
+
+include_directories(../../)
 
 include(FetchContent)
 
@@ -20,18 +22,20 @@ endif()
 enable_testing()
 
 add_executable(
-  MCP9600_Tests
+    ADCS_Tests
   TestMain.cpp
 )
 target_link_libraries(
-    #MCP9600
-    MCP9600_Tests
+    ADCS_Tests
     GTest::gtest_main
-    MCP9600
+    bootloader
+    common
+    cubeacp
+    cubeadcs
 )
 
 include(GoogleTest)
-gtest_discover_tests(MCP9600_Tests)
+gtest_discover_tests(ADCS_Tests)
 
 #Autorun UT
 #add_custom_command(

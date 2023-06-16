@@ -258,5 +258,8 @@ uint16_t BOOTLOADER_FormatReadProgramInfoCmd(uint8_t* tcBuffer, BOOTLOADER_Progr
  ******************************************************************************/
 uint16_t BOOTLOADER_FormatRunSelectedProgramCmd(uint8_t* tcBuffer);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif  // define __CUBECOMPUTER4FLASHBOOTLOADER3_H

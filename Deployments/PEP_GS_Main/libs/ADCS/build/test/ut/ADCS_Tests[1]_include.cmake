@@ -1,0 +1,5 @@
+if(EXISTS "/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/ADCS/build/test/ut/ADCS_Tests[1]_tests.cmake")
+  include("/home/noahbraasch/WALI/PEP-GS-Flight-Software/Deployments/PEP_GS_Main/libs/ADCS/build/test/ut/ADCS_Tests[1]_tests.cmake")
+else()
+  add_test(ADCS_Tests_NOT_BUILT ADCS_Tests_NOT_BUILT)
+endif()
