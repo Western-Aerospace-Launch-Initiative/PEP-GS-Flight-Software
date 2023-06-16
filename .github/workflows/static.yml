@@ -37,8 +37,8 @@ jobs:
       - name: Generate Pages
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
-          working-directory: 'Deployments/PEP_GS_Main/libs/MCP9600/src'
-          doxyfile-path: '../docs/MCP9600.doxygen'
+          working-directory: 'Deployments/PEP_GS_Main/libs/'
+          doxyfile-path: 'docs/MCP9600.doxygen'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
