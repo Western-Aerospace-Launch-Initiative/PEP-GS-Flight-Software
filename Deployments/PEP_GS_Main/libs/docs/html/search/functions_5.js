@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['mcp_5fget_5fstatus_1759',['mcp_get_status',['../MCP9600_8c.html#a513a0822214fb0277fc9c4ed8b8cf2f0',1,'mcp_get_status(i2c_thermocouple *pdevice):&#160;MCP9600.c'],['../MCP9600_8h.html#a513a0822214fb0277fc9c4ed8b8cf2f0',1,'mcp_get_status(i2c_thermocouple *pdevice):&#160;MCP9600.c']]],
-  ['mcp_5fget_5ftemp_1760',['mcp_get_temp',['../MCP9600_8c.html#ad10ac44674a275824f23e30ad845c096',1,'mcp_get_temp(i2c_thermocouple *pdevice):&#160;MCP9600.c'],['../MCP9600_8h.html#ad10ac44674a275824f23e30ad845c096',1,'mcp_get_temp(i2c_thermocouple *pdevice):&#160;MCP9600.c']]],
-  ['mcp_5fthermocouple_5fdisable_1761',['mcp_thermocouple_disable',['../MCP9600_8c.html#acf772ff454f567559041c72497861a28',1,'mcp_thermocouple_disable(i2c_thermocouple *pdevice):&#160;MCP9600.c'],['../MCP9600_8h.html#acf772ff454f567559041c72497861a28',1,'mcp_thermocouple_disable(i2c_thermocouple *pdevice):&#160;MCP9600.c']]],
-  ['mcp_5fthermocouple_5fenable_1762',['mcp_thermocouple_enable',['../MCP9600_8c.html#ae4e27c3fcfb0471a47f5b3dc644d0247',1,'mcp_thermocouple_enable(i2c_thermocouple *pdevice):&#160;MCP9600.c'],['../MCP9600_8h.html#ae4e27c3fcfb0471a47f5b3dc644d0247',1,'mcp_thermocouple_enable(i2c_thermocouple *pdevice):&#160;MCP9600.c']]],
-  ['mcp_5fthermocouple_5finit_1763',['mcp_thermocouple_init',['../MCP9600_8c.html#ad3fd8ebc5b43dfa3aa009b15f1094ad8',1,'mcp_thermocouple_init(int i2c_bus_int, int i2c_address, char thermocouple_type, const char *ID):&#160;MCP9600.c'],['../MCP9600_8h.html#ad3fd8ebc5b43dfa3aa009b15f1094ad8',1,'mcp_thermocouple_init(int i2c_bus_int, int i2c_address, char thermocouple_type, const char *ID):&#160;MCP9600.c']]]
-];
