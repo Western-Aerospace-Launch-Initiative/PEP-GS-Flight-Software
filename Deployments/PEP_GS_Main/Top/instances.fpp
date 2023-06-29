@@ -92,6 +92,16 @@ module PEP_GS_Main {
     stack size Default.STACK_SIZE \
     priority 100
 
+  instance wheelSender: PEP_GS_Main.WheelSender base id 0x1000 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 100
+
+  instance wheelReceiver: PEP_GS_Main.WheelReceiver base id 0x1100 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 100
+
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------

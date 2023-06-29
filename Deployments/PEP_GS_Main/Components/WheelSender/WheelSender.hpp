@@ -34,6 +34,21 @@ namespace PEP_GS_Main {
     PRIVATE:
 
       // ----------------------------------------------------------------------
+      // Handler implementations for user-defined typed input ports
+      // ----------------------------------------------------------------------
+
+      //! Handler implementation for wheelResultIn
+      //!
+      void wheelResultIn_handler(
+          const NATIVE_INT_TYPE portNum, /*!< The port number*/
+          U16 WheelReturnVal /*!< 
+      Return value for set wheel speed command
+      */
+      );
+
+    PRIVATE:
+
+      // ----------------------------------------------------------------------
       // Command handler implementations
       // ----------------------------------------------------------------------
 

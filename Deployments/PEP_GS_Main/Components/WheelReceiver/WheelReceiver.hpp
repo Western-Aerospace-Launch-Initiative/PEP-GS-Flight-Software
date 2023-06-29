@@ -34,11 +34,35 @@ namespace PEP_GS_Main {
     PRIVATE:
 
       // ----------------------------------------------------------------------
+      // Handler implementations for user-defined typed input ports
+      // ----------------------------------------------------------------------
+
+      //! Handler implementation for wheelParamsIn
+      //!
+      void wheelParamsIn_handler(
+          const NATIVE_INT_TYPE portNum, /*!< The port number*/
+          U8 Nodeid, /*!< 
+      node id for wheels
+      */
+          I16 Xspeed, /*!< 
+      Speed for x wheels
+      */
+          I16 Yspeed, /*!< 
+      Speed for Y wheels
+      */
+          I16 Zspeed /*!< 
+      Speed for z wheels
+      */
+      );
+
+    PRIVATE:
+
+      // ----------------------------------------------------------------------
       // Command handler implementations
       // ----------------------------------------------------------------------
 
       //! Implementation for TODO command handler
-      //! TODO
+      //! 
       void TODO_cmdHandler(
           const FwOpcodeType opCode, /*!< The opcode*/
           const U32 cmdSeq /*!< The command sequence number*/

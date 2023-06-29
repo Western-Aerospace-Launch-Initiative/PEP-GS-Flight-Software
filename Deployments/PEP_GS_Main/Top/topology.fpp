@@ -47,6 +47,8 @@ module PEP_GS_Main {
     instance systemResources
     instance tempSender
     instance tempReceiver
+    instance wheelSender
+    instance wheelReceiver
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
@@ -134,6 +136,8 @@ module PEP_GS_Main {
       tempReceiver.EnabledOut -> tempSender.EnabledIn
       tempReceiver.TempOut -> tempSender.TempIn
       tempReceiver.statusOut -> tempSender.statusIn
+      wheelSender.wheelParamsOut -> wheelReceiver.wheelParamsIn
+      wheelReceiver.wheelResultOut -> wheelSender.wheelResultIn
     }
 
   }

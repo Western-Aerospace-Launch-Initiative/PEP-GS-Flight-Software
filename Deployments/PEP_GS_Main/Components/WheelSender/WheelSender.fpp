@@ -2,8 +2,14 @@ module PEP_GS_Main {
     @ Component for sending wheel speed parameters
     active component WheelSender {
 
-        # One async command/port is required for active components
-        # This should be overridden by the developers with a useful command/port
+        # General Ports
+        @Port for Sending Set wheel params
+        output port wheelParamsOut: WheelParams
+
+        @Port for receiving the return value
+        async input port wheelResultIn: WheelResult
+
+        # Commands
 
         @ Set wheel speed
         async command SET_SPEED(
@@ -13,6 +19,7 @@ module PEP_GS_Main {
                                 zspeed: I16 @< Speed for z wheels
         )
 
+        # Events
         event RESULT(
                     result: U16 @< The wheel speed return value
         ) \

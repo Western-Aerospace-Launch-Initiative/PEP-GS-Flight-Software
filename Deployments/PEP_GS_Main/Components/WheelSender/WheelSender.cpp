@@ -29,6 +29,19 @@ namespace PEP_GS_Main {
   }
 
   // ----------------------------------------------------------------------
+  // Handler implementations for user-defined typed input ports
+  // ----------------------------------------------------------------------
+
+  void WheelSender ::
+    wheelResultIn_handler(
+        const NATIVE_INT_TYPE portNum,
+        U16 WheelReturnVal
+    )
+  {
+    // TODO
+  }
+
+  // ----------------------------------------------------------------------
   // Command handler implementations
   // ----------------------------------------------------------------------
 

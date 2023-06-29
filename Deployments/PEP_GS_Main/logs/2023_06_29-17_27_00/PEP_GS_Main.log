@@ -1,0 +1,193 @@
+Hit Ctrl-C to quit
+EVENT: (1280) (2:1688074026,962474) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x500 registered to port 0 slot 0
+EVENT: (1280) (2:1688074026,962551) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x501 registered to port 0 slot 1
+EVENT: (1280) (2:1688074026,962555) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x502 registered to port 0 slot 2
+EVENT: (1280) (2:1688074026,962557) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x503 registered to port 0 slot 3
+EVENT: (1280) (2:1688074026,962561) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x600 registered to port 1 slot 4
+EVENT: (1280) (2:1688074026,962564) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x601 registered to port 1 slot 5
+EVENT: (1280) (2:1688074026,962566) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x602 registered to port 1 slot 6
+EVENT: (1280) (2:1688074026,962568) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x603 registered to port 1 slot 7
+EVENT: (1280) (2:1688074026,962570) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x604 registered to port 1 slot 8
+EVENT: (1280) (2:1688074026,962572) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x605 registered to port 1 slot 9
+EVENT: (1280) (2:1688074026,962575) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x606 registered to port 1 slot 10
+EVENT: (1280) (2:1688074026,962577) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x607 registered to port 1 slot 11
+EVENT: (1280) (2:1688074026,962579) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xb00 registered to port 2 slot 12
+EVENT: (1280) (2:1688074026,962581) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xb02 registered to port 2 slot 13
+EVENT: (1280) (2:1688074026,962584) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xb03 registered to port 2 slot 14
+EVENT: (1280) (2:1688074026,962586) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x700 registered to port 3 slot 15
+EVENT: (1280) (2:1688074026,962588) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x701 registered to port 3 slot 16
+EVENT: (1280) (2:1688074026,962590) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x702 registered to port 3 slot 17
+EVENT: (1280) (2:1688074026,962593) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x800 registered to port 4 slot 18
+EVENT: (1280) (2:1688074026,962595) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x801 registered to port 4 slot 19
+EVENT: (1280) (2:1688074026,962597) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x802 registered to port 4 slot 20
+EVENT: (1280) (2:1688074026,962599) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x803 registered to port 4 slot 21
+EVENT: (1280) (2:1688074026,962601) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x804 registered to port 4 slot 22
+EVENT: (1280) (2:1688074026,962604) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x805 registered to port 4 slot 23
+EVENT: (1280) (2:1688074026,962606) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x806 registered to port 4 slot 24
+EVENT: (1280) (2:1688074026,962608) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x2000 registered to port 5 slot 25
+EVENT: (1280) (2:1688074026,962611) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x2001 registered to port 5 slot 26
+EVENT: (1280) (2:1688074026,962613) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x2002 registered to port 5 slot 27
+EVENT: (1280) (2:1688074026,962615) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xd00 registered to port 6 slot 28
+EVENT: (1280) (2:1688074026,962617) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x4a00 registered to port 7 slot 29
+EVENT: (1280) (2:1688074026,962620) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x4a01 registered to port 7 slot 30
+EVENT: (1280) (2:1688074026,962622) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xf00 registered to port 8 slot 31
+EVENT: (1280) (2:1688074026,962625) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xe00 registered to port 9 slot 32
+EVENT: (1280) (2:1688074026,962627) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xe01 registered to port 9 slot 33
+EVENT: (1280) (2:1688074026,962629) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xe02 registered to port 9 slot 34
+EVENT: (1280) (2:1688074026,962637) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0xe03 registered to port 9 slot 35
+EVENT: (1280) (2:1688074026,962640) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x1100 registered to port 10 slot 36
+EVENT: (1280) (2:1688074026,962643) DIAGNOSTIC: (cmdDisp) OpCodeRegistered : Opcode 0x1000 registered to port 11 slot 37
+EVENT: (3334) (2:1688074026,962684) WARNING_HI: (prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+[WARNING] High task priority of 140 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_blockDrv. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 101 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_cmdDisp. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_cmdSeq. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_eventLogger. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+[ERROR] Failed to send framed data: 2
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_fileDownlink. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_fileManager. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_fileUplink. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_prmDb. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 120 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_rateGroup1. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 119 being clamped to 99
+EVENT: (512) (2:1688074026,968084) DIAGNOSTIC: (rateGroup1) RateGroupStarted : Rate group started.
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_rateGroup2. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 118 being clamped to 99
+EVENT: (768) (2:1688074026,968882) DIAGNOSTIC: (rateGroup2) RateGroupStarted : Rate group started.
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_rateGroup3. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+EVENT: (1024) (2:1688074026,969665) DIAGNOSTIC: (rateGroup3) RateGroupStarted : Rate group started.
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_tempReceiver. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_tempSender. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_tlmSend. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_wheelReceiver. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_wheelSender. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[WARNING] High task priority of 100 being clamped to 99
+pthread_create: Insufficient permissions to create thread. May not set thread priority without permission. Operation not permitted
+[WARNING] Insufficient Permissions:
+[WARNING] Insufficient permissions to set task priority or set task CPU affinity on task TP_ReceiveTask. Creating task without priority nor affinity.
+[WARNING] Please use no-argument <component>.start() calls, set priority/affinity to TASK_DEFAULT or ensure user has correct permissions for operating system.
+[WARNING]      Note: future releases of fprime will fail when setting priority/affinity without sufficient permissions 
+
+[WARNING] Task priority set and permissions unavailable. Discarding priority.
+[ERROR] Failed to send framed data: 2
+Connected to 0.0.0.0:50000 as a tcp client
+EVENT: (1281) (2:1688074073,217273) COMMAND: (cmdDisp) OpCodeDispatched : Opcode 0x1000 dispatched to port 11
+EVENT: (1282) (2:1688074073,217349) COMMAND: (cmdDisp) OpCodeCompleted : Opcode 0x1000 completed
+EVENT: (1281) (2:1688074086,471780) COMMAND: (cmdDisp) OpCodeDispatched : Opcode 0xf00 dispatched to port 8
+EVENT: (1282) (2:1688074086,471903) COMMAND: (cmdDisp) OpCodeCompleted : Opcode 0xf00 completed
+EVENT: (1281) (2:1688074086,775620) COMMAND: (cmdDisp) OpCodeDispatched : Opcode 0xf00 dispatched to port 8
+EVENT: (1282) (2:1688074086,775761) COMMAND: (cmdDisp) OpCodeCompleted : Opcode 0xf00 completed
+EVENT: (1281) (2:1688074096,20294) COMMAND: (cmdDisp) OpCodeDispatched : Opcode 0xe02 dispatched to port 9
+EVENT: (1282) (2:1688074096,20426) COMMAND: (cmdDisp) OpCodeCompleted : Opcode 0xe02 completed
+ERROR 0: The device "/dev/i2c-2" was unable to be opened.
+ERROR_6: Device "Test" write failed.
+ERROR 3: Device "Test" was unable to close.
+EVENT: (3586) (2:1688074096,521178) ACTIVITY_HI: (tempSender) TEMP_RECEIVED : Thermocouple ID is measuring -1 degrees celcius.
+[WARNING] Failed to recv from port with status -8 and errno 0
+Exiting...

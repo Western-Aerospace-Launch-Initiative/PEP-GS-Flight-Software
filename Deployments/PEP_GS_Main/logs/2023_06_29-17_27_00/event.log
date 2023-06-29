@@ -1,0 +1,9 @@
+2023-06-29 17:27:53,(2(0)-1688074073:217273),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x1000 dispatched to port 11
+2023-06-29 17:27:53,(2(0)-1688074073:217349),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x1000 completed
+2023-06-29 17:28:06,(2(0)-1688074086:471780),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xf00 dispatched to port 8
+2023-06-29 17:28:06,(2(0)-1688074086:471903),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xf00 completed
+2023-06-29 17:28:06,(2(0)-1688074086:775620),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xf00 dispatched to port 8
+2023-06-29 17:28:06,(2(0)-1688074086:775761),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xf00 completed
+2023-06-29 17:28:16,(2(0)-1688074096:20294),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe02 dispatched to port 9
+2023-06-29 17:28:16,(2(0)-1688074096:20426),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe02 completed
+2023-06-29 17:28:16,(2(0)-1688074096:521178),tempSender.TEMP_RECEIVED,3586,EventSeverity.ACTIVITY_HI,Thermocouple ID is measuring -1.0 degrees celcius.

@@ -29,6 +29,22 @@ namespace PEP_GS_Main {
   }
 
   // ----------------------------------------------------------------------
+  // Handler implementations for user-defined typed input ports
+  // ----------------------------------------------------------------------
+
+  void WheelReceiver ::
+    wheelParamsIn_handler(
+        const NATIVE_INT_TYPE portNum,
+        U8 Nodeid,
+        I16 Xspeed,
+        I16 Yspeed,
+        I16 Zspeed
+    )
+  {
+    // TODO
+  }
+
+  // ----------------------------------------------------------------------
   // Command handler implementations
   // ----------------------------------------------------------------------
 
