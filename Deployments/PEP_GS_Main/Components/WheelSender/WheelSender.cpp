@@ -19,7 +19,7 @@ namespace PEP_GS_Main {
         const char *const compName
     ) : WheelSenderComponentBase(compName)
   {
-
+  
   }
 
   WheelSender ::
@@ -38,7 +38,7 @@ namespace PEP_GS_Main {
         U16 WheelReturnVal
     )
   {
-    // TODO
+    this->log_ACTIVITY_HI_RESULT(WheelReturnVal);
   }
 
   // ----------------------------------------------------------------------
@@ -55,7 +55,7 @@ namespace PEP_GS_Main {
         I16 zspeed
     )
   {
-    // TODO
+    this->wheelParamsOut_out(0, nodeid, xspeed, yspeed, zspeed);
     this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
   }
 

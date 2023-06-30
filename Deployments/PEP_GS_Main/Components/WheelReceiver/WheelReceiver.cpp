@@ -47,7 +47,8 @@ namespace PEP_GS_Main {
   {
     // Do we need to Set the speed and then say "go"? Not sure.
     CUBEACP_WheelSpeedCmd_t params = {Xspeed, Yspeed, Zspeed};
-    CUBEACP_FormatWheelSpeedCmdCmd(&Nodeid, &params);
+    U16 result = CUBEACP_FormatWheelSpeedCmdCmd(&Nodeid, &params);
+    this->wheelResultOut_out(0, result);
   }
 
   // ----------------------------------------------------------------------
