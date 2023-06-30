@@ -3,6 +3,8 @@
  * Please do not modify the contents of this file manually.                         *
  ***********************************************************************************/
 
+#pragma once
+
 #ifndef __BOOTLOADER3_H
 #define __BOOTLOADER3_H
 

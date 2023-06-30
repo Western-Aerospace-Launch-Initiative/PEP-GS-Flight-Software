@@ -7,6 +7,10 @@
 
 #include <PEP_GS_Main/Components/WheelReceiver/WheelReceiver.hpp>
 #include <FpConfig.hpp>
+#include "bootloader.h"
+#include "common.h"
+#include "cubeacp.h"
+#include "cubeadcs.h"
 
 namespace PEP_GS_Main {
 
@@ -41,7 +45,9 @@ namespace PEP_GS_Main {
         I16 Zspeed
     )
   {
-    // TODO
+    // Do we need to Set the speed and then say "go"? Not sure.
+    CUBEACP_WheelSpeedCmd_t params = {Xspeed, Yspeed, Zspeed};
+    CUBEACP_FormatWheelSpeedCmdCmd(&Nodeid, &params);
   }
 
   // ----------------------------------------------------------------------

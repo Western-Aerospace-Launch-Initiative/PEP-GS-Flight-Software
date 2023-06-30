@@ -1,4 +1,8 @@
+#pragma once
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #ifndef _TYPES_H_
 #define _TYPES_H_
@@ -32,5 +36,9 @@ typedef enum
 	TlmRangeError         = 3,
 	TcAckTimeout          = 4
 } CUBEADCS_Result_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* _TYPES_H_ */

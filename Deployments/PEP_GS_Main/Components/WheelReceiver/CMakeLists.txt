@@ -19,3 +19,19 @@ set(SOURCE_FILES
 # )
 
 register_fprime_module()
+
+get_module_name("${CMAKE_CURRENT_LIST_DIR}")
+find_library(libBootloader bootloader ${CMAKE_CURRENT_LIST_DIR}/../../libs/ADCS/build/)
+find_library(libCommon common ${CMAKE_CURRENT_LIST_DIR}/../../libs/ADCS/build/)
+find_library(libCubeACP cubeacp ${CMAKE_CURRENT_LIST_DIR}/../../libs/ADCS/build/)
+find_library(libCubeADCS cubeadcs ${CMAKE_CURRENT_LIST_DIR}/../../libs/ADCS/build/)
+find_path(ADCS_INCLUDES types.h ${CMAKE_CURRENT_LIST_DIR}/../../libs/ADCS/src/)
+include_directories(${ADCS_INCLUDES})
+
+target_link_libraries(
+    ${MODULE_NAME}
+    PUBLIC ${libBootloader}
+    PUBLIC ${libCommon}
+    PUBLIC ${libCubeACP}
+    PUBLIC ${libCubeADCS}
+   )

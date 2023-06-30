@@ -3,6 +3,8 @@
  * Please do not modify the contents of this file manually.                         *
  ***********************************************************************************/
 
+#pragma once
+
 #ifndef __COMMON2_H
 #define __COMMON2_H
 
@@ -1164,4 +1166,5 @@ uint16_t COMMON_FormatUnixTimeSaveCmd(uint8_t* tcBuffer, Boolean saveNow, Boolea
 #ifdef __cplusplus
 }
 #endif
+
 #endif  // define __CUBECOMPUTER4COMMON2_H

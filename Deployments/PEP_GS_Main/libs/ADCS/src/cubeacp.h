@@ -3,6 +3,8 @@
  * Please do not modify the contents of this file manually.                         *
  ***********************************************************************************/
 
+#pragma once
+
 #ifndef __CUBEACP7_H
 #define __CUBEACP7_H
 
@@ -4564,5 +4566,8 @@ uint16_t CUBEACP_FormatWheelSpeedCmdCmd(uint8_t* tcBuffer, CUBEACP_WheelSpeedCmd
  ******************************************************************************/
 uint16_t CUBEACP_FormatYWheelParamsCmd(uint8_t* tcBuffer, CUBEACP_AdcsConfig_t* setVal);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif  // define __CUBECOMPUTER4CONTROLPROGRAM7_H
