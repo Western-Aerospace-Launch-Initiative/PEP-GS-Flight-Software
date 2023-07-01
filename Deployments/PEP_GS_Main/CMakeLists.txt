@@ -31,6 +31,8 @@ add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components/WheelSender/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Datatypes/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Ports/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components/WheelReceiver/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components/MagnetorquerSender/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components/MagnetorquerReceiver/")
 
 #User Added
 #add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/libs/")

@@ -102,6 +102,17 @@ module PEP_GS_Main {
     stack size Default.STACK_SIZE \
     priority 100
 
+  instance torquerSender: PEP_GS_Main.MagnetorquerSender base id 0x1200 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 100
+
+  instance torquerReceiver: PEP_GS_Main.MagnetorquerReceiver base id 0x1300 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 100
+
+
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------

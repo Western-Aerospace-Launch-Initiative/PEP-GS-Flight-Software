@@ -49,6 +49,8 @@ module PEP_GS_Main {
     instance tempReceiver
     instance wheelSender
     instance wheelReceiver
+    instance torquerSender
+    instance torquerReceiver
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
@@ -138,6 +140,8 @@ module PEP_GS_Main {
       tempReceiver.statusOut -> tempSender.statusIn
       wheelSender.wheelParamsOut -> wheelReceiver.wheelParamsIn
       wheelReceiver.wheelResultOut -> wheelSender.wheelResultIn
+      torquerSender.torquerParamsOut -> torquerReceiver.torquerParamsIn
+      torquerReceiver.torquerResultOut -> torquerSender.torquerResultIn
     }
 
   }
