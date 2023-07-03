@@ -78,6 +78,15 @@
         <channel name="tempSender.TEMPERATURE"/>
         <channel name="tempSender.STATUS"/>
     </packet>
+
+    <packet name="MagnetorquerReceiver" id="9" level="2">
+        <channel name="torquerReceiver.X_TORQUE"/>
+        <channel name="torquerReceiver.Y_TORQUE"/>
+        <channel name="torquerReceiver.Z_TORQUE"/>
+        <channel name="torquerReceiver.X_SPEED"/>
+        <channel name="torquerReceiver.Y_SPEED"/>
+        <channel name="torquerReceiver.Z_SPEED"/>
+    </packet>    
     <!-- Ignored packets -->
 
     <ignore>

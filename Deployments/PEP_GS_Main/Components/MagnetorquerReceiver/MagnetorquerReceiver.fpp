@@ -9,6 +9,15 @@ module PEP_GS_Main {
 
         async input port torquerParamsIn: MagnetorquerParams @< Port for receiving params
 
+        #Telemetry
+
+        telemetry X_TORQUE: I16
+        telemetry Y_TORQUE: I16
+        telemetry Z_TORQUE: I16
+        telemetry X_SPEED: I16
+        telemetry Y_SPEED: I16
+        telemetry Z_SPEED: I16
+
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
         ###############################################################################

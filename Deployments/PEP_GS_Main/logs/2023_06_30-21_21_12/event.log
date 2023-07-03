@@ -1,0 +1,3 @@
+2023-06-30 21:21:50,(2(0)-1688174510:889120),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x1200 dispatched to port 11
+2023-06-30 21:21:50,(2(0)-1688174510:889242),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x1200 completed
+2023-06-30 21:21:50,(2(0)-1688174510:889316),torquerSender.RESULT,4608,EventSeverity.ACTIVITY_HI,Set torquer duuty cycle return value is 7

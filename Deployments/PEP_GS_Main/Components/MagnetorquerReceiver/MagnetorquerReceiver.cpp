@@ -47,6 +47,15 @@ namespace PEP_GS_Main {
   {
     CUBEACP_TorquerCmd_t params = {TorquerX, TorquerY, TorquerZ};
     U16 result = CUBEACP_FormatTorquerCmdCmd(&Nodeid, &params);
+    U8 buffer = 0;
+    CUBEACP_ActuatorCmd_t values;
+    CUBEADCS_Result_t returnVal = CUBEACP_ExtractMagTorquerCmdTlm(&buffer, &values);
+    this->tlmWrite_X_TORQUE(values.torquerCmdX);
+    this->tlmWrite_Y_TORQUE(values.torquerCmdY);
+    this->tlmWrite_Z_TORQUE(values.torquerCmdZ);
+    this->tlmWrite_X_SPEED(values.speedCmdX);
+    this->tlmWrite_Y_SPEED(values.speedCmdY);
+    this->tlmWrite_Z_SPEED(values.speedCmdZ);
     this->torquerResultOut_out(0, result);
   }
 

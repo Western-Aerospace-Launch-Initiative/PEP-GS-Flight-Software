@@ -1,0 +1,10 @@
+2023-07-03 15:16:55,(2(0)-1688411815:319626),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x1000 dispatched to port 13
+2023-07-03 15:16:55,(2(0)-1688411815:319783),wheelSender.RESULT,4096,EventSeverity.ACTIVITY_HI,Set wheel speed return value is 7
+2023-07-03 15:16:55,(2(0)-1688411815:319789),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x1000 completed
+2023-07-03 15:17:29,(2(0)-1688411849:770965),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe00 dispatched to port 9
+2023-07-03 15:17:29,(2(0)-1688411849:771097),tempSender.THERMOCOUPLE_ENABLED,3584,EventSeverity.ACTIVITY_LO,Thermocouple 6 has been enabled.
+2023-07-03 15:17:29,(2(0)-1688411849:771247),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe00 completed
+2023-07-03 15:17:30,(2(0)-1688411850:271683),tempSender.TEMP_RECEIVED,3586,EventSeverity.ACTIVITY_HI,Thermocouple ID is measuring -1.0 degrees celcius.
+2023-07-03 15:17:35,(2(0)-1688411855:817138),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0xe02 dispatched to port 9
+2023-07-03 15:17:35,(2(0)-1688411855:817316),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0xe02 completed
+2023-07-03 15:17:36,(2(0)-1688411856:317781),tempSender.TEMP_RECEIVED,3586,EventSeverity.ACTIVITY_HI,Thermocouple ID is measuring -1.0 degrees celcius.
