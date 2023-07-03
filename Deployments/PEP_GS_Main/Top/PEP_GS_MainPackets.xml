@@ -79,7 +79,16 @@
         <channel name="tempSender.STATUS"/>
     </packet>
 
-    <packet name="MagnetorquerReceiver" id="9" level="2">
+    <packet name="WheelReceiver" id="9" level="2">
+        <channel name="wheelReceiver.X_SPEED"/>
+        <channel name="wheelReceiver.Y_SPEED"/>
+        <channel name="wheelReceiver.Z_SPEED"/>
+        <channel name="wheelReceiver.X_CURRENT"/>
+        <channel name="wheelReceiver.Y_CURRENT"/>
+        <channel name="wheelReceiver.Z_CURRENT"/>
+    </packet>
+
+    <packet name="MagnetorquerReceiver" id="10" level="2">
         <channel name="torquerReceiver.X_TORQUE"/>
         <channel name="torquerReceiver.Y_TORQUE"/>
         <channel name="torquerReceiver.Z_TORQUE"/>

@@ -1,0 +1,9 @@
+2023-07-03 15:45:33,(2(0)-1688413533:884170),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x1000 dispatched to port 13
+2023-07-03 15:45:33,(2(0)-1688413533:885186),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x1000 completed
+2023-07-03 15:45:33,(2(0)-1688413533:885842),wheelSender.RESULT,4096,EventSeverity.ACTIVITY_HI,Set wheel speed return value is 7
+2023-07-03 15:45:46,(2(0)-1688413546:825149),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x1200 dispatched to port 11
+2023-07-03 15:45:46,(2(0)-1688413546:825782),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x1200 completed
+2023-07-03 15:45:46,(2(0)-1688413546:825905),torquerSender.RESULT,4608,EventSeverity.ACTIVITY_HI,Set torquer duuty cycle return value is 7
+2023-07-03 15:46:01,(2(0)-1688413561:55558),cmdDisp.OpCodeDispatched,1281,EventSeverity.COMMAND,Opcode 0x1200 dispatched to port 11
+2023-07-03 15:46:01,(2(0)-1688413561:55834),cmdDisp.OpCodeCompleted,1282,EventSeverity.COMMAND,Opcode 0x1200 completed
+2023-07-03 15:46:01,(2(0)-1688413561:55925),torquerSender.RESULT,4608,EventSeverity.ACTIVITY_HI,Set torquer duuty cycle return value is 7

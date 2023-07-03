@@ -9,6 +9,15 @@ module PEP_GS_Main {
 
         async input port wheelParamsIn: WheelParams @< Ports for receiving the wheel speed params
 
+        # Telemetry
+
+        telemetry X_SPEED: I16
+        telemetry Y_SPEED: I16
+        telemetry Z_SPEED: I16
+        telemetry X_CURRENT: F64
+        telemetry Y_CURRENT: F64
+        telemetry Z_CURRENT: F64
+
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
         ###############################################################################
